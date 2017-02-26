@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_d66ec7b8e260e7539b5aafa200b9a1b86f6db40e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_29e3ff2d516c9db1125b282d32a656badaf045f0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4f562925b8ab0ea6d71e267a7c8e770072135165">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3f9802a860f7e4c36c213436a851e493f8a53ea6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_a2832e493ecf101418a3e87daa442c9eebcdaa51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_a55c4032c4197b033d74436370c5f8cd10abdbcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_f2627eb1ce21fb77a97675b4ca8184021554813b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_4280204da1ad9f3c64e1f25143a47a03d95e3ef4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_fbd9c25bd5ec2b0f82e54d18eb120e2cf31d02e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_08b655ce8712fcaf900293817302ca57baf21515/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_9963e49b129ce114b44f732ed53b690bf180df31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9a45a2a0e39fcbbd56a7410db73a3208d3e5d30">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b6ecd7766a114e53775b050d85d496ffbe97af15/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/ennionasca/Desktop/Udacity/Android Basic/JustJava/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_c37fa22c22b1d4d5effdfed1951a194379968088/classes.dex" />
+    </item>
+
+</items>
