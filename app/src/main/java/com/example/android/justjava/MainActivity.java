@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import static android.R.attr.max;
@@ -39,15 +40,17 @@ public class MainActivity extends AppCompatActivity {
         boolean hasWhippedCream = checkBox1.isChecked();
         CheckBox checkBox2 = (CheckBox) findViewById(R.id.chocolate_box);
         boolean hasChocolate = checkBox2.isChecked();
-        String message = createOrderSummary(price,hasWhippedCream,hasChocolate);
+        EditText editText = (EditText) findViewById(R.id.customer_name);
+        String customerName = editText.getText().toString();
+        String message = createOrderSummary(price, customerName, hasWhippedCream, hasChocolate);
         displayMessage(message);
     }
 
     /**
      * Creates the summary of the order for the currunt purchase
      */
-    public String createOrderSummary(float price, boolean addWhippedCream, boolean addChocolate){
-        String summary = "Name: Ennio Nasca"
+    public String createOrderSummary(float price, String customerName, boolean addWhippedCream, boolean addChocolate){
+        String summary = "Name: " + customerName
                 +"\nadd whipped cream? " + addWhippedCream
                 +"\nadd chocolate? " + addChocolate
                 +"\nQuantity: " + quantity
