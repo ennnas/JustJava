@@ -6,7 +6,9 @@ package com.example.android.justjava;
  * package com.example.android.justjava;
  */
 
+import android.content.Intent;
 import android.icu.text.NumberFormat;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -36,19 +38,26 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
+        //Looks for which topping is selected
         CheckBox checkBox1 = (CheckBox) findViewById(R.id.whipped_cream_box);
         boolean hasWhippedCream = checkBox1.isChecked();
         CheckBox checkBox2 = (CheckBox) findViewById(R.id.chocolate_box);
         boolean hasChocolate = checkBox2.isChecked();
+        // calculate the price for the actual order
         float price = calculatePrice(hasChocolate,hasWhippedCream);
+        // gets the name of the person ordering
         EditText editText = (EditText) findViewById(R.id.customer_name);
         String customerName = editText.getText().toString();
-        if(hasChocolate)
-            price += 2;
-        if(hasWhippedCream)
-            price += 1;
+        // generate the order summary for the email text
         String message = createOrderSummary(price, customerName, hasWhippedCream, hasChocolate);
-        displayMessage(message);
+        // creates an Intent for the mail
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL,new String[] {"JustJavaApp@gmail.com"});
+        intent.putExtra(Intent.EXTRA_SUBJECT,"JustJava order for "+customerName);
+        intent.putExtra(Intent.EXTRA_TEXT,message);
+        if (intent.resolveActivity(getPackageManager())!=null)
+            startActivity(intent);
     }
 
     /**
@@ -86,15 +95,6 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText("" + number);
     }
 
-    private void displayPrice(int number){
-        TextView priceTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
-    }
-
-    private void displayMessage(String message){
-        TextView priceTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        priceTextView.setText(message);
-    }
 
     public void increment(View view){
         quantity = quantity +1;
