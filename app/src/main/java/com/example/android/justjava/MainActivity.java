@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL,new String[] {"JustJavaApp@gmail.com"});
-        intent.putExtra(Intent.EXTRA_SUBJECT,"JustJava order for "+customerName);
+        intent.putExtra(Intent.EXTRA_SUBJECT,getString(R.string.order_summary_email_subject,customerName));
         intent.putExtra(Intent.EXTRA_TEXT,message);
         if (intent.resolveActivity(getPackageManager())!=null)
             startActivity(intent);
@@ -64,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
      * Creates the summary of the order for the currunt purchase
      */
     public String createOrderSummary(float price, String customerName, boolean addWhippedCream, boolean addChocolate){
-        String summary = "Name: " + customerName
-                +"\nadd whipped cream? " + addWhippedCream
-                +"\nadd chocolate? " + addChocolate
-                +"\nQuantity: " + quantity
-                +"\nTotal: €" + price
-                +"\nThank You!";
+        String summary = getString(R.string.order_summary_name,customerName)+"\n"
+                + getString(R.string.order_summary_whipped_cream, Boolean.toString(addWhippedCream))+"\n"
+                + getString(R.string.order_summary_chocolate_top, Boolean.toString(addChocolate))+"\n"
+                + getString(R.string.order_summary_quantity, quantity)+"\n"
+                + getString(R.string.order_summary_price, NumberFormat.getCurrencyInstance().format(price))+"\n"
+                + getString(R.string.thank_you);
         return summary;
     }
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         quantity = quantity +1;
         if (quantity>100) {
             quantity = 100;
-            Toast.makeText(this,"You can not order more then 100 coffees",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.coffee_100),Toast.LENGTH_SHORT).show();
         }
         display(quantity);
     }
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         quantity = quantity - 1;
         if (quantity<1) {
             quantity = 1;
-            Toast.makeText(this, "You can not order less then 1 coffee", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.coffee_1), Toast.LENGTH_SHORT).show();
         }
         display(quantity);
     }

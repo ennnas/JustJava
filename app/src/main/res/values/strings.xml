@@ -1,3 +1,34 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Just Java</string>
+    <!-- hint for the editText -->
+    <string name="name">Name</string>
+
+    <!-- header text for the topping list -->
+    <string name="toppings">Toppings</string>
+
+    <!-- list of toppigs -->
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="chocolate">Chocolate</string>
+
+    <!-- header text for quantity -->
+    <string name="quantity">Quantity</string>
+
+    <!-- text for the order button -->
+    <string name="order">Order</string>
+
+    <!-- strings for the order summary -->
+    <string name="order_summary_name">Name: <xliff:g id="name" example="Mario">%s</xliff:g></string>
+    <string name="order_summary_whipped_cream">add whipped cream? <xliff:g id="addWhippedCream" example="true">%s</xliff:g></string>
+    <string name="order_summary_chocolate_top">add chocolate? <xliff:g id="addChocolate" example="true">%s</xliff:g></string>
+    <string name="order_summary_quantity">Quantity: %d</string>
+    <string name="order_summary_price">Total: <xliff:g id="price">%s</xliff:g></string>
+    <string name="thank_you">Thank You!</string>
+
+    <!-- subject for the email -->
+    <string name="order_summary_email_subject">JustJava order for <xliff:g id="name">%s</xliff:g></string>
+
+    <!-- Alert text for coffee limit -->
+    <string name="coffee_100">You can not order more then 100 coffees</string>
+    <string name="coffee_1">You can not order less then 1 coffees</string>
+
 </resources>
