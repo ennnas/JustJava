@@ -35,13 +35,17 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        float price = calculatePrice();
         CheckBox checkBox1 = (CheckBox) findViewById(R.id.whipped_cream_box);
         boolean hasWhippedCream = checkBox1.isChecked();
         CheckBox checkBox2 = (CheckBox) findViewById(R.id.chocolate_box);
         boolean hasChocolate = checkBox2.isChecked();
+        float price = calculatePrice(hasChocolate,hasWhippedCream);
         EditText editText = (EditText) findViewById(R.id.customer_name);
         String customerName = editText.getText().toString();
+        if(hasChocolate)
+            price += 2;
+        if(hasWhippedCream)
+            price += 1;
         String message = createOrderSummary(price, customerName, hasWhippedCream, hasChocolate);
         displayMessage(message);
     }
@@ -63,8 +67,13 @@ public class MainActivity extends AppCompatActivity {
      * Calculates the price of the order.
      *
      */
-    private float calculatePrice() {
-        float price = quantity * cupOfCoffe;
+    private float calculatePrice(boolean hasChocolate, boolean hasWhippedCream) {
+        float price = cupOfCoffe;
+        if(hasChocolate)
+            price += 2;
+        if(hasWhippedCream)
+            price += 1;
+        price *= quantity ;
         return price;
     }
 
@@ -88,13 +97,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void increment(View view){
         quantity = quantity +1;
+        if (quantity>100)
+            quantity = 100;
         display(quantity);
     }
 
     public void decrement(View view){
         quantity = quantity - 1;
-        if (quantity<0)
-            quantity = 0;
+        if (quantity<1)
+            quantity = 1;
         display(quantity);
     }
 }
